@@ -5,3 +5,6 @@
 #### 2. create config
 `./kubernetes_add_service_account_kubeconfig.sh ${user-name} ${namespaces} ${hosts} ${https-cert-path}
 `./kubernetes_add_service_account_kubeconfig.sh github test https://kubernetes.io /etc/nginx/cert/ca.pem`
+
+### 3. access kubernetes clusters with config
+`KUBECONFIG=${config_path} kubectl get pods`
