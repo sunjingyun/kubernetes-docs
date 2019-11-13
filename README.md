@@ -3,7 +3,9 @@
 `kubectl apply -f kubernetes_add_service_account_kubeconfig_rbac_test.yaml`
 
 #### 2. create config
-`./kubernetes_add_service_account_kubeconfig.sh ${user-name} ${namespaces} ${hosts} ${https-cert-path}
+`./kubernetes_add_service_account_kubeconfig.sh ${user-name} ${namespaces} ${hosts} ${https-cert-path}`
+
+such as:
 `./kubernetes_add_service_account_kubeconfig.sh github test https://kubernetes.io /etc/nginx/cert/ca.pem`
 
 ### 3. access kubernetes clusters with config
