@@ -11,3 +11,9 @@
 
 ### 3. access kubernetes clusters with config
 `KUBECONFIG=${config_path} kubectl get pods`
+
+### 4. support http2 in nginx if you are using helm
+```
+proxy_set_header Upgrade $http_upgrade;
+proxy_set_header Connection "upgrade";
+```
